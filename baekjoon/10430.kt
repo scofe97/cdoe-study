@@ -1,4 +1,4 @@
-package com.example.kotlin_study
+package com.example.baekjoon
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

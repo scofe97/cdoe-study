@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package com.example.baekjoon
-=======
-package com.example.kotlin_study.baekjoon
->>>>>>> parent of df4bf5a (2022/01/04 작업)
 
 import java.io.BufferedReader
 import java.io.BufferedWriter
