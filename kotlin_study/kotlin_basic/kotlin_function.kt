@@ -1,7 +1,4 @@
-package com.example.kotlin_study
-
-
-
+package com.example.kotlin_study.kotlin_basic
 
 
 // 코틀린 함수
