@@ -5,21 +5,32 @@ import java.io.BufferedWriter
 import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 
-fun main(){
+fun main() {
 
     val br = BufferedReader(InputStreamReader(System.`in`))
     val bw = BufferedWriter(OutputStreamWriter(System.`out`))
 
     val count = br.readLine().toInt()
-    val list = IntArray(count+1)
+    val list = IntArray(count + 1) { 0 }
 
-    list[1] = 1
-    list[2] = 3
+    list[0] = 1
 
-    for(i in 3..count){
-        list[i] = list[i-1] + list[i-2]*3
+    for (i in 2..count) {
+        if (i % 2 == 0) {
+            list[i] = list[i - 2] * 3
+
+            for (j in i - 4 downTo 0 step 2) {
+                list[i] += list[j] * 2
+            }
+        }
+
     }
 
-    println(list[count])
+    val result = list[count]
+
+    bw.write(result.toString())
+    bw.flush()
+    bw.close()
+    br.close()
 
 }
