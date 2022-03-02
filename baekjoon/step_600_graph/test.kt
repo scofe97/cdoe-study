@@ -8,12 +8,11 @@ import java.util.*
 
 private val br = BufferedReader(InputStreamReader(System.`in`))
 private val bw = BufferedWriter(OutputStreamWriter(System.`out`))
-private val st = StringTokenizer(br.readLine())
-
+private val count1 = br.readLine().toInt()
+private val count2 = br.readLine().toInt()
 private fun main(){
-    val n1 = st.nextToken().toDouble()
-    val n2 = st.nextToken().toDouble()
-    bw.write("${n1/n2}")
+
+    bw.write("${count1+ count2}")
     bw.flush()
     bw.close()
     br.close()
